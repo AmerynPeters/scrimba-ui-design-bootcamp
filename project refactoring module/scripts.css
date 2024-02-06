@@ -136,6 +136,7 @@ main {
 }
 
 /* Your Fixes Below */
+
 body {
     background-color: #173746;
     font-family: Arial, Helvetica, sans-serif;
@@ -207,12 +208,44 @@ nav ul li a {
     font-size: 1em;
 }
 
+h1 {
+    padding-left: 1em;
+}
+
 h3 {
     font-size: 0.8em;
 }
 
 header {
-    font-size: 3em;
+    font-size: 2em;
     padding-top: 0.5em;
     margin-right: 1em;
+}
+
+/* Large Phones */
+
+@media (min-width: 420px) {
+    body {
+        padding: 1em;
+        text-align: left;
+    }
+    ul.data {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    ul.data li {
+        flex: 0 0 50%;
+    }
+}
+
+@media (min-width: 550px) {
+    ul.data {
+        justify-content: center;
+    }
+    .panel ul.data li {
+        flex: 0 0 33%;
+    }
+    .panel ul.data li p {
+        margin-bottom: 0;
+    }
 }
