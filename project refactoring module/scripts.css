@@ -1,5 +1,31 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap");
+/* Large Phones */
 
+@media (min-width: 420px) {
+    body {
+        padding: 1em;
+        text-align: left;
+    }
+    ul.data {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    ul.data li {
+        flex: 0 0 50%;
+    }
+}
+
+@media (min-width: 550px) {
+    ul.data {
+        justify-content: center;
+    }
+    .panel ul.data li {
+        flex: 0 0 33%;
+    }
+    .panel ul.data li p {
+        margin-bottom: 0;
+    }
+}
 * {
     box-sizing: border-box;
 }
@@ -222,30 +248,4 @@ header {
     margin-right: 1em;
 }
 
-/* Large Phones */
 
-@media (min-width: 420px) {
-    body {
-        padding: 1em;
-        text-align: left;
-    }
-    ul.data {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    ul.data li {
-        flex: 0 0 50%;
-    }
-}
-
-@media (min-width: 550px) {
-    ul.data {
-        justify-content: center;
-    }
-    .panel ul.data li {
-        flex: 0 0 33%;
-    }
-    .panel ul.data li p {
-        margin-bottom: 0;
-    }
-}
