@@ -25,7 +25,7 @@ header {
 }
 
 header svg {
-    width: 1.5em;
+    width: 2em;
     cursor: pointer;
 }
 
@@ -158,12 +158,14 @@ a.cta-btn {
     padding: 0.3em 0.5em;
     margin-top: auto;
     position: relative;
+    border-radius: 0.2em;
 }
 
 .panel {
     padding-bottom: 1em;
     margin-left: 2em;
     margin-right: 2em;
+    margin-bottom: 2em;
 }
 
 h3 {
@@ -198,6 +200,7 @@ nav {
 
 nav ul li a {
     font-size: 1.2em;
+    padding: 0.1em 0.1em;
 }
 
 .inner-wrapper {
@@ -206,4 +209,10 @@ nav ul li a {
 
 h3 {
     font-size: 0.8em;
+}
+
+header {
+    font-size: 3em;
+    padding-top: 0.5em;
+    margin-right: 1em;
 }
