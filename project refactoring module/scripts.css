@@ -1,21 +1,20 @@
-@import url("https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
 
 * {
     box-sizing: border-box;
 }
-html,
-body {
+html, body {
     margin: 0;
     padding: 0;
 }
 
 body {
     background: #3b4acd;
-    color: #a5b2d3;
-    padding: 0.5em;
+    color: #A5B2D3;
+    padding: .5em;
     font-family: serif;
     height: 100vh;
-    text-align: center;
+    text-align:center;
 }
 
 header {
@@ -25,13 +24,14 @@ header {
 }
 
 header svg {
-    width: 2em;
+    width: 1.5em;
     cursor: pointer;
 }
 
 a {
     color: white;
 }
+
 
 ul {
     list-style: none;
@@ -45,16 +45,17 @@ a.logo {
 
 a.cta-btn {
     margin-left: auto;
-    background: #fc85ae;
+    background: #FC85AE;
     padding: 1em;
     display: inline-block;
     border-radius: 2em;
-    font-size: 0.6em;
-    color: #303a52;
+    font-size: .6em;
+    color: #303A52;
     font-weight: bold;
 }
 
 /* Navigation */
+
 
 nav {
     position: fixed;
@@ -66,9 +67,10 @@ nav {
     visibility: hidden;
     transform: translateX(-50%);
     opacity: 0;
-    transition: all 0.3s;
+    transition: all .3s;
     text-align: center;
 }
+
 
 nav p {
     margin-bottom: 0;
@@ -81,12 +83,12 @@ nav svg {
 
 nav ul li a {
     display: block;
-    padding: 0.2em;
+    padding: .2em;
     font-size: 1.8em;
 }
 
 .selected {
-    background: #9e579d;
+    background: #9E579D;
 }
 
 .open-nav {
@@ -95,7 +97,9 @@ nav ul li a {
     transform: translateX(0);
 }
 
+
 /* Main Section */
+
 
 h1 {
     color: white;
@@ -103,12 +107,12 @@ h1 {
 }
 
 .panel {
-    background: #39445f;
-    border-radius: 0.3em;
+    background: #39445F;
+    border-radius: .3em;
 }
 
 h3 {
-    color: #fc85ae;
+    color: #FC85AE;
     margin: 0;
     font-size: 2em;
 }
@@ -117,7 +121,7 @@ ul.data li p {
     color: white;
     font-weight: bold;
     font-size: 1.8em;
-    margin: 0.3em 0 1em;
+    margin: .3em 0 1em;
 }
 
 ul.data li:last-child p {
@@ -132,94 +136,57 @@ ul.secondary li p {
 
 main {
     border: 1px solid white;
-    margin-top: 1em;
 }
+
 
 /* Your Fixes Below */
 
 body {
-    background-color: #173746;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.open-nav {
-    background-color: #414756;
-    padding-top: 3em;
-    padding-left: 2em;
-    padding-right: 2em;
+    background: #303A52;
+    font-family: 'Nunito', sans-serif;
 }
 
-a.logo {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
-    position: relative;
-}
-
-a.cta-btn {
-    font-size: 1em;
-    padding: 0.3em 0.5em;
-    margin-top: auto;
-    position: relative;
-    border-radius: 0.2em;
-}
-
-.panel {
-    padding-bottom: 1em;
-    margin-left: 2em;
-    margin-right: 2em;
-    margin-bottom: 2em;
-}
-
-h3 {
-    padding-top: 1em;
-    margin: 0.5em;
-}
-
-.inner-wrapper {
-    font-size: 2em;
-}
-
-header.logo {
-    font-size: 5em;
+nav {
+    background: #2C354A;
 }
 
 main {
-    border: unset;
-}
+   border: unset;
+} 
 
 a {
     text-decoration: none;
 }
 
 p {
-    line-height: 2em;
+    line-height: 1.4em;
 }
 
-nav {
-    font-size: 2em;
-    margin: auto;
+a.cta-btn {
+    font-size: .9em;
+    padding: .2em .4em;
+    border-radius: .2em;
 }
 
 nav ul li a {
     font-size: 1.2em;
-    padding: 0.1em 0.1em;
-}
-
-.inner-wrapper {
-    font-size: 1em;
-}
-
-h1 {
-    padding-left: 1em;
+    padding: .8em 1em;
 }
 
 h3 {
-    font-size: 0.8em;
+    font-size: unset;
 }
 
-header {
-    font-size: 2em;
-    padding-top: 0.5em;
-    margin-right: 1em;
+nav {
+    text-align: left;
+}
+
+.inner-wrapper {
+    padding: 1em;
+}
+.panel {
+    padding: .5em 1em;
+    margin-bottom: 2em;
 }
 
 
@@ -249,4 +216,99 @@ header {
     .panel ul.data li p {
         margin-bottom: 0;
     }
+    nav {
+        width: 40%;
+    }
+}
+
+@media (min-width: 720px) {
+    body {
+        padding: 1.5em;
+    }
+    .columns {
+        display: flex;
+    }
+    .col {
+        flex: 0 0 48%;
+    }
+    .secondary {
+        margin-left: 3em;
+    }
+    ul.secondary {
+        margin-top: 0;
+    }
+    nav {
+        width: 30%;
+    }
+    
+}
+
+@media (min-width: 850px) {
+    body {
+        display: grid;
+        grid-template-columns: 200px auto;
+        grid-template-rows: 70px auto;
+        grid-template-areas:
+            "sidebar header"
+            "sidebar main";
+        padding: 0;
+    }
+    
+    header, main {
+        padding: 1.5em;
+    }
+    
+    nav {
+        grid-area: sidebar;
+        opacity: 1;
+        visibility: unset;
+        transform: translateX(0);
+        width: 100%;
+        position: unset;
+        
+    }
+    
+    header {
+        grid-area: header;
+    }
+    
+    main {
+        grid-area: main;
+    }
+    
+    a.logo {
+        margin: 0;
+    }
+    svg {
+        display: none;
+    }
+}
+
+
+ /*
+
+- White Space
+- Color 
+- Contrast 
+- Scale
+- Alignment
+- Typography
+- Visual Hierarchy
+
+*/
+
+
+
+/* Ignore this -- for displaying the viewport width */
+.width-container {
+    display: none;
+}
+.display-width {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #E6E6E6;
+    padding: .3em;
+    font-size: .85em;
 }
