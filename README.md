@@ -1,1 +1,1 @@
-The Srimba Learn UI Design Course
+The Scrimba Learn UI Design Course
